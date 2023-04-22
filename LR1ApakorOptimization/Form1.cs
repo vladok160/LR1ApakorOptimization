@@ -21,6 +21,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -29,6 +30,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
 
@@ -44,6 +46,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -52,6 +55,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
 
@@ -67,6 +71,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -75,6 +80,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
 
@@ -91,6 +97,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -99,6 +106,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
 
@@ -113,6 +121,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -121,6 +130,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
 
@@ -135,6 +145,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -143,6 +154,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
 
@@ -158,6 +170,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
             else
             {
@@ -166,6 +179,7 @@ namespace LR1ApakorOptimization
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
                 ErrorRate.Text = Convert.ToString(search.GetErrorRate());
+                TimeOfDoing.Text = Convert.ToString(search.TimeOfDoing());
             }
         }
     }

@@ -13,14 +13,19 @@ namespace LR1ApakorOptimization
             //Будет работать дефолтный конструктор GlobalData
             Search();
         }
-
+        TimeSpan elapsedTime;
         public Dihotomia(double x0, double x1, double Epsilon)
         {
             this.x0 = x0;
             this.x1 = x1;
             this.Epsilon = Epsilon;
             iterations = 0;
+            
             Search();
+        }
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
         }
         public double GetErrorRate()
         {
@@ -43,6 +48,7 @@ namespace LR1ApakorOptimization
 
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             double x1dop = x0 + (x1 - x0) / 3, x2 = x1 - (x1 - x0) / 3;
             double f1 = f(x1dop), f2 = f(x2);
 
@@ -66,6 +72,8 @@ namespace LR1ApakorOptimization
                 }
                 iterations++;
             }
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
     }
 }

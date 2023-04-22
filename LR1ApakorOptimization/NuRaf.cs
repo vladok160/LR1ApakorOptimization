@@ -9,6 +9,7 @@ namespace LR1ApakorOptimization
     internal class NuRaf : GlobalData, IAnswerMethods
     {
         double f1, df, ddf, dx;
+        TimeSpan elapsedTime;
 
         public NuRaf() //Пустой конструктор если нихуя не введешь в текстбоксы
         {
@@ -22,6 +23,11 @@ namespace LR1ApakorOptimization
             this.Epsilon = Epsilon;
             iterations = 0;
             Search();
+        }
+
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
         }
 
         public double GetErrorRate()
@@ -46,6 +52,7 @@ namespace LR1ApakorOptimization
 
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             do
             {
                 f1 = f(x0);
@@ -55,6 +62,8 @@ namespace LR1ApakorOptimization
                 x0 += dx;
                 iterations++;
             } while (Math.Abs(dx) > Epsilon);
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
     }
 }

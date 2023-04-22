@@ -10,7 +10,7 @@ namespace LR1ApakorOptimization
     {
         int n;
         double x1dop, x2dop, f1, f2;
-
+        TimeSpan elapsedTime;
         public Fibonaci() //Пустой конструктор если нихуя не введешь в текстбоксы
         {
             //Будет работать дефолтный конструктор GlobalData
@@ -37,7 +37,10 @@ namespace LR1ApakorOptimization
 
             Search();
         }
-
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
+        }
         public double GetErrorRate()
         {
             return ((Math.Abs(0.127 - f((x0 + x1) / 2))) / 0.127) * 100;
@@ -60,6 +63,7 @@ namespace LR1ApakorOptimization
 
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             while (n > 2)
             {
                 n--;
@@ -81,6 +85,8 @@ namespace LR1ApakorOptimization
                 }
                 iterations++;
             }
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
 
         public int Fibonacci(int n)

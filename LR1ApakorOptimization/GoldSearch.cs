@@ -9,6 +9,7 @@ namespace LR1ApakorOptimization
     internal class GoldSearch : GlobalData, IAnswerMethods
     {
         double phi, x1_new, x2_new, Answ;
+        TimeSpan elapsedTime;
         public GoldSearch() //Пустой конструктор если нихуя не введешь в текстбоксы
         {
             //Будет работать дефолтный конструктор GlobalData
@@ -30,6 +31,10 @@ namespace LR1ApakorOptimization
             iterations = 0;
             Search();
         }
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
+        }
         public double GetErrorRate()
         {
             return ((Math.Abs(0.127 - f(Answ))) / 0.127) * 100;
@@ -50,6 +55,7 @@ namespace LR1ApakorOptimization
         }
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             while (Math.Abs(x1 - x0) > Epsilon)
             {
                 if (f(x1_new) < f(x2_new))
@@ -67,6 +73,8 @@ namespace LR1ApakorOptimization
                 iterations++;
             }
             Answ = (x0 + x1) / 2;
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
     }
 }

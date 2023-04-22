@@ -16,6 +16,7 @@ namespace LR1ApakorOptimization
         double x2;
         double oldXMinus;
         double oldXPlus;
+        TimeSpan elapsedTime;
 
         public SekuckMethod() //Пустой конструктор если нихуя не введешь в текстбоксы
         {
@@ -39,6 +40,11 @@ namespace LR1ApakorOptimization
             f1 = Math.Exp(-2 - x1) + Math.Pow(x1, 2) / 2;
 
             Search();
+        }
+
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
         }
 
         public double GetErrorRate()
@@ -86,6 +92,7 @@ namespace LR1ApakorOptimization
 
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             for (int i = 0; i < maxIterations; i++)
             {
                 // Расчет следующей точки x2
@@ -107,6 +114,8 @@ namespace LR1ApakorOptimization
                 x1 = x2;
                 f1 = f2;
             }
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
     }
 }

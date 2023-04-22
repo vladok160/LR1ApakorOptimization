@@ -9,7 +9,7 @@ namespace LR1ApakorOptimization
     internal class KasatelniMethod : GlobalData, IAnswerMethods
     {
         double f1, df, ddf, dx;
-
+        TimeSpan elapsedTime;
         public KasatelniMethod() //Пустой конструктор если нихуя не введешь в текстбоксы
         {
             //Будет работать дефолтный конструктор GlobalData
@@ -21,6 +21,11 @@ namespace LR1ApakorOptimization
             this.x0 = x0;
             this.Epsilon = Epsilon;
             Search();
+        }
+
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
         }
 
         public double GetErrorRate()
@@ -45,6 +50,7 @@ namespace LR1ApakorOptimization
 
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             do
             {
                 f1 = f(x0);
@@ -54,6 +60,8 @@ namespace LR1ApakorOptimization
                 x0 += dx;
                 iterations++;
             } while (Math.Abs(dx) > Epsilon);
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
     }
 }

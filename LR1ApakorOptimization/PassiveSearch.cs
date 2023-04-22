@@ -10,6 +10,7 @@ namespace LR1ApakorOptimization
     {
         double delta;
         double AnswX, AnxswY;
+        TimeSpan elapsedTime;
         public PassiveSearch() //Пустой конструктор если нихуя не введешь в текстбоксы
         {
             //Будет работать дефолтный конструктор GlobalData
@@ -29,6 +30,11 @@ namespace LR1ApakorOptimization
             AnxswY = 0;
 
             Search();
+        }
+
+        public string TimeOfDoing()
+        {
+            return Convert.ToString(elapsedTime);
         }
 
         public double GetErrorRate()
@@ -53,6 +59,7 @@ namespace LR1ApakorOptimization
 
         private void Search()
         {
+            DateTime startTime = DateTime.Now;
             int n = (int)Math.Ceiling((x1 - x0) / delta); // количество точек для перебора
             double xmin = x0; // начальное значение минимума
             double fmin = f(x0); // начальное значение функции в минимуме
@@ -71,6 +78,8 @@ namespace LR1ApakorOptimization
             }
             AnswX = xmin;
             AnxswY = fmin;
+            DateTime endTime = DateTime.Now;
+            elapsedTime = endTime - startTime;
         }
     }
 }
