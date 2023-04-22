@@ -20,6 +20,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -27,6 +28,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
 
@@ -41,6 +43,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -48,6 +51,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
 
@@ -62,6 +66,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -69,6 +74,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
 
@@ -84,6 +90,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -91,6 +98,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
 
@@ -104,6 +112,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -111,6 +120,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
 
@@ -124,6 +134,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -131,6 +142,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
 
@@ -145,6 +157,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
             else
             {
@@ -152,6 +165,7 @@ namespace LR1ApakorOptimization
                 ResultX.Text = Convert.ToString(search.GetX());
                 ResultF.Text = Convert.ToString(search.GetF());
                 Iterations.Text = Convert.ToString(search.GetIterations());
+                ErrorRate.Text = Convert.ToString(search.GetErrorRate());
             }
         }
     }

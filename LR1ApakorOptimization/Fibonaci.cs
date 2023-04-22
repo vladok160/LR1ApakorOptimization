@@ -38,6 +38,11 @@ namespace LR1ApakorOptimization
             Search();
         }
 
+        public double GetErrorRate()
+        {
+            return ((Math.Abs(0.127 - f((x0 + x1) / 2))) / 0.127) * 100;
+        }
+
         public double GetF()
         {
             return f((x0 + x1) / 2);

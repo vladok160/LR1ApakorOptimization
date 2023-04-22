@@ -30,6 +30,10 @@ namespace LR1ApakorOptimization
             iterations = 0;
             Search();
         }
+        public double GetErrorRate()
+        {
+            return ((Math.Abs(0.127 - f(Answ))) / 0.127) * 100;
+        }
         public double GetF()
         {
             return f(Answ);

@@ -44,6 +44,9 @@
             this.ResultX = new System.Windows.Forms.Label();
             this.ResultF = new System.Windows.Forms.Label();
             this.Iterations = new System.Windows.Forms.Label();
+            this.ErrorRate = new System.Windows.Forms.Label();
+            this.TimeOfDoing = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // X0
@@ -191,11 +194,41 @@
             this.Iterations.TabIndex = 15;
             this.Iterations.Text = "Количество итераций";
             // 
+            // ErrorRate
+            // 
+            this.ErrorRate.AutoSize = true;
+            this.ErrorRate.Location = new System.Drawing.Point(320, 33);
+            this.ErrorRate.Name = "ErrorRate";
+            this.ErrorRate.Size = new System.Drawing.Size(83, 15);
+            this.ErrorRate.TabIndex = 16;
+            this.ErrorRate.Text = "Погрешность";
+            // 
+            // TimeOfDoing
+            // 
+            this.TimeOfDoing.AutoSize = true;
+            this.TimeOfDoing.Location = new System.Drawing.Point(320, 75);
+            this.TimeOfDoing.Name = "TimeOfDoing";
+            this.TimeOfDoing.Size = new System.Drawing.Size(114, 15);
+            this.TimeOfDoing.TabIndex = 17;
+            this.TimeOfDoing.Text = "Время выполнения";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(433, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 15);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "%";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 323);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.TimeOfDoing);
+            this.Controls.Add(this.ErrorRate);
             this.Controls.Add(this.Iterations);
             this.Controls.Add(this.ResultF);
             this.Controls.Add(this.ResultX);
@@ -238,5 +271,8 @@
         private Label ResultX;
         private Label ResultF;
         private Label Iterations;
+        private Label ErrorRate;
+        private Label TimeOfDoing;
+        private Label label4;
     }
 }

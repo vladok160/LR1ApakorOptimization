@@ -11,5 +11,6 @@ namespace LR1ApakorOptimization
         public double GetX();
         public double GetF();
         public double GetIterations();
+        public double GetErrorRate();
     }
 }

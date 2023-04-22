@@ -41,6 +41,11 @@ namespace LR1ApakorOptimization
             Search();
         }
 
+        public double GetErrorRate()
+        {
+            return ((Math.Abs(0.127 - f(x2))) / 0.127) * 100;
+        }
+
         public double GetF()
         {
             if (oldXMinus < 0 && (oldXPlus == 0 || (oldXPlus < 0 && oldXPlus > oldXMinus) || oldXPlus > 0))
